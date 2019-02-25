@@ -28,6 +28,6 @@ public class Statistic {
     private Long pageId;
 
     @Column(name = "visit_date")
-    private LocalDate visit_date;
+    private LocalDate visitDate;
 
 }

@@ -1,6 +1,6 @@
 package app.services;
 
-import app.dao.StatisticDao;
+import app.repository.StatisticRepository;
 import app.form.EventForm;
 import app.model.Statistic;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +13,10 @@ import java.time.LocalDate;
 @Service
 public class StatisticServiceImpl implements StatisticService {
 
-    private StatisticDao dao;
+    private StatisticRepository dao;
 
     @Autowired
-    public StatisticServiceImpl(StatisticDao dao) {
+    public StatisticServiceImpl(StatisticRepository dao) {
         this.dao = dao;
     }
 
@@ -32,7 +32,7 @@ public class StatisticServiceImpl implements StatisticService {
                 visit_date(LocalDate.now()).
                 build());
 
-        //using dao
+        //using repository
         Long countAllVisitDay = (long) dao.findAllUsersCurrDate().size();
         Long countUniqueUsersDay = (long) dao.findUniqueUsersCurrDate().size();
 
@@ -52,7 +52,7 @@ public class StatisticServiceImpl implements StatisticService {
         LocalDate startDate = LocalDate.parse(from);
         LocalDate endDate = LocalDate.parse(to);
 
-        //using dao
+        //using repository
         Long countAllVisitsPeriod = (long) dao.findAllUsersPeriod(startDate, endDate).size();
         Long countUniqueUsersPeriod = (long) dao.findAllUniqueUsersPeriod(startDate, endDate).size();
         Long countPermanentUsersPeriod = dao.findAllPermanentUsersPeriodNative(startDate, endDate);
