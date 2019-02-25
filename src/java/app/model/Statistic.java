@@ -30,6 +30,4 @@ public class Statistic {
     @Column(name = "visit_date")
     private LocalDate visit_date;
 
-
-
 }
