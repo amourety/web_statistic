@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-02-23T22:56:44.371+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet",
+  "path": "/event"
+}
