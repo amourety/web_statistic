@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import app.transfer.PostResultDto;
 import app.transfer.StatisticDto;
 
-import java.sql.Date;
 import java.time.LocalDate;
 
 @Service
