@@ -9,7 +9,7 @@ POST http://localhost:8080/event
 Content-Type: application/json
 
 {
-  "userId": 1,
+  "userId": 5,
   "pageId": 2
 }
 

@@ -19,13 +19,12 @@ public class StatisticController {
 
     @PostMapping("/event")
     public ResponseEntity<PostResultDto> postEvent(@RequestBody EventForm form) {
-        System.out.println(form);
         return ResponseEntity.ok(service.postEvent(form));
     }
+
+    ///statistic?from=2019-02-21&to=2019-02-25
     @GetMapping("/statistic")
     public ResponseEntity<StatisticDto> getStatistic(@RequestParam String from, @RequestParam String to) {
-        System.out.println(from);
-        System.out.println(to);
         return  ResponseEntity.ok(service.getStatistics(from,to));
     }
 }
