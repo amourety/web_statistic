@@ -1,7 +1,0 @@
-{
-  "timestamp": "2019-02-23T22:31:15.717+0000",
-  "status": 500,
-  "error": "Internal Server Error",
-  "message": "Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query",
-  "path": "/event"
-}
