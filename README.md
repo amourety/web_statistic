@@ -17,8 +17,12 @@ $ mvn spring-boot:run
 2. Get visit's statistic 
   ```
   go to /statistic and use parameters as ?from=year-mm-dd&to=year-mm-dd 
+  
   for checking statistics in this period
+  
   for example: http://localhost:8080/statistic?from=2019-02-21&to=2019-02-25
+  
+  response will be in json format
   ```
   
  
