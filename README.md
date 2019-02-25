@@ -1,5 +1,4 @@
-# web_statistic
-test service web statistic 
+# web_statistic_service
 created by Vadim Bespalov 2019
 
 to start application simply run following Maven command:
