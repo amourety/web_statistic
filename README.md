@@ -9,7 +9,7 @@ $ mvn spring-boot:run
 
 1. Create visit's event 
   ```
-  use event.http in src\java\app folder to send http post request
+  use event.http in src\main\java\app folder to send http post request
 
   response will be in json format
   ```
